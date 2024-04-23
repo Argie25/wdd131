@@ -13,6 +13,11 @@ main {
     padding: 100px;
 }
 
+img {
+    width: 300px;
+    height: auto;
+}
+
 aside {
     grid-column: 4/5;
     background-color: white;
@@ -21,11 +26,9 @@ aside {
 
 header {
     grid-column: 1/5;
-    padding: 30px;
     background-color: darkgray;
 }
 nav {
-    grid-column: 1/5;
     background-color: black;
     padding: 25px;
 }

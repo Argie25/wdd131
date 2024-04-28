@@ -83,9 +83,19 @@ figcaption {
     font-size: smaller;
     margin: 5px;
 }
-h2 {
+h3 {
     font-family: var(--heading-font);
     text-align: center;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    background-color: var(--primary-color);
+    text-align: center;
+    margin: 0%;
+    padding: 15px;
+    box-sizing: border-box;
+    height: 75px;
 }
 
 main p {

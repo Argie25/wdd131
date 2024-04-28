@@ -46,6 +46,9 @@ a {
     font-family: var(--secondary-font);
     text-decoration: none;
 }
+nav a:hover {
+    color: #FF5733;
+} /* Change color when hovered */
 
 /* Body Section */
 

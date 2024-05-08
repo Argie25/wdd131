@@ -17,6 +17,7 @@
 }
 /* header section */
 header {
+    height: 100px;
     background-color: var(--primary-color);
 }
 
@@ -25,7 +26,8 @@ li {
 }
 
 a{
-    color: white;
+    font-family: var(--heading-font);
+    color: black;
     text-decoration: none;
 }
 
@@ -78,7 +80,7 @@ a{
     gap: 20px;
 }
 
-h1 {
+h2 {
     font-family: var(--heading-font);
     text-align: center;
 }
@@ -96,7 +98,7 @@ figcaption {
 /* Footer Section */
 footer {
     background-color: var(--primary-color);
-    height: 75px;
+    height: 100px;
     padding: 10px;
 }
 

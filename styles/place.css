@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --primary-color: #FFFF00;
+    --secondary-color: #A2EC4F;
+    --third-color: #00E2DE;
+
+    --heading-font: 'Lora', serif;
+    --secondary-font: 'Montserrat', serif;
+
+
+}
+
+
+
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+header {
+    padding : 20px;
+    background-color : var(--third-color);
+    color : aliceblue;
+    font-size : 1.5rem;
+    font-weight : bold;
+    text-align : center;
+}
+
+.data, .weather {
+    display : grid;
+    grid-template-columns : 1fr 1fr;
+    text-align : center;
+    border-bottom : 10px solid var(--third-color);
+}
+
+h2 {
+    font-family: var(--heading-font);
+    grid-column : 1 / 3;
+    padding-top : 20px;
+    padding-bottom : 10px;
+    font-weight : bolder;
+}
+
+img {
+    grid-column : 1 / 3;
+    width : 80px;
+    height : auto;
+    margin : 0 auto;  
+}
+    
+label {
+    font-family: var(--secondary-font);
+    grid-column : 1 / 2;
+    margin-right : 10px;
+    text-align : right;
+}
+    
+span {
+    font-family: var(--secondary-font);
+    grid-column : 2 / 3;
+    text-align : left;
+}
+    
+.hero img {
+    width : 100%;
+    height : auto;
+    border-top : 10px solid var(--third-color);
+    border-bottom : 10px solid var(--third-color);
+    
+}
+    
+footer {
+    grid-column : 1 / 3;
+    grid-row : 3;
+    background-color : var(--third-color);
+    border : black solid 1px;
+    color : aliceblue;
+    padding : 10px;
+    text-align : center;
+    
+}
+    
+footer p {
+    margin : 5px;
+    
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+    
+.hero {
+    position : relative;
+    width : 100%;
+    height : 750px;
+}
+    
+.hero img {
+    width : 100%;
+    height : 100%;
+    object-fit : cover;
+    object-position : center;
+    
+}
+    
+.data, .weather {
+    position : absolute;
+    background-color : rgb(255, 255, 255, 0.85);
+    font-size : 14px;
+    border : none;
+    padding : 10px;
+   
+}
+    
+.data {
+    top : 120px;
+    left : 30px;
+    z-index : 1;
+    
+}
+    
+.weather {
+    bottom : 100px;
+    right : 30px;
+    z-index : 1;
+    
+}
+    
+.weather h2::after {
+    content : "⛅";
+    display : inline-block;
+    margin-left : 20px;
+    
+}
+    
+.weather img {
+    display : none;
+    
+}
+    
+h2 {
+    background-color : rgb(255, 222, 173, 0.9);
+    font-size : 1.5rem;
+    
+}
+    
+}

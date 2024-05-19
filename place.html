@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="Place Assignment WDD 131 - Dynamic Web Fundamentals by Argie Dela Cruz">
+    <meta name="author" content="Argie Dela Cruz">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Phillipines</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/philippines-small.webp" media="(min-width: 768px)">
+                <source srcset="images/philippines.webp" media="(max-width: 767px)">
+                <img src="images/philippines.webp" alt="Landscape">
+            </picture>
+        </div>
+
+        <div class="data">
+            <h2>Data</h2>
+
+            <label for="area">Area: </label>
+            <span id="area">300,000 km² (115,831 mi²)</span><br>
+            
+            <label for="population">Population: </label>
+            <span id="population">119.1 million</span><br>
+
+            <label for="population-density">Population density: </label>
+            <span id="population-density">397 people per km²</span><br>
+
+            <label for="languages">Languages: </label>
+            <span id="languages">Filipino, English</span><br>
+
+            <label for="currency">Currency: </label>
+            <span id="currency">Philippine Peso (PHP)</span><br>
+
+            <label for="time-zone">Time zone: </label>
+            <span id="time-zone">GMT+8</span><br>
+
+            <label for="calling-code">Calling code: </label>
+            <span id="calling-code">+63</span><br>
+
+            <label for="internet-tld">Internet TLD: </label>
+            <span id="internet-tld">.ph</span><br>
+        </div>
+
+        <div class="weather">
+            <h2>Weather</h2>
+            <img src="images/sunny-icon.svg" alt="clouds_sun_icon">
+            
+            <label for="temperature">Temperature: </label>
+            <span id="temperature">Temperature: 32°C</span><br>
+
+            <label for="condition">Condition: </label>
+            <span id="condition">Mostly cloudy</span><br>
+
+            <label for="wind">Wind: </label>
+            <span id="wind">15 km/h from ENE</span><br>
+
+            <label for="wind-chill">Wind Chill: </label>
+            <span id="wind-chill">N/A</span><br>
+        </div>
+    </main>
+    <footer>
+        <p>©2024 <span id="currentyear"></span> Argie Dela Cruz  Phillipines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

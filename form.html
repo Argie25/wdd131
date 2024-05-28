@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Activity</title>
+    <meta name="description" content="applying my knowledge about good form design">
+    <meta name="author" content="Argie Dela Cruz">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form action="thanks.html" method="get">
+            <label>
+                Product Name*
+                <select id="product-select">
+                    <option value="" disabled selected>Select a product</option>
+                </select>
+            </label>
+            <fieldset>
+                <div>Overall Rating</div>
+                <div class="stars">
+	            <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+	            <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+	            <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+	            <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+	            <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                </div>
+            </fieldset>
+            <label>
+                Date of Installation*
+                <input type="date" name="installDate" id="installDate" required>
+            </label>
+            <fieldset>
+                <div>Which of the features did you find to be useful?</div>
+                <label><input type="checkbox" name="feature" id="durability" value="durability">Durability</label>
+                <label><input type="checkbox" name="feature" id="easeOfUse" value="ease of use">Ease of use</label>
+                <label><input type="checkbox" name="feature" id="performance"
+                        value="performance">Performance</label>
+                <label><input type="checkbox" name="feature" id="design" value="design">Design</label>
+            </fieldset>
+            <label>
+                Written Review
+                <textarea id="writenReview" name="writenReview"></textarea>
+            </label>
+            <label>
+                Your Name:
+                <input type="text" id="userName" name="userName" placeholder="Your Name">
+            </label>
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>©2024 <span id="currentyear"></span> Argie Dela Cruz  Phillipines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

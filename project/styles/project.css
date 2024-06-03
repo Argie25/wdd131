@@ -166,6 +166,12 @@ figcaption{
     justify-content: center;
     gap: 10px;
 }
+
+.link a {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 15px;
+}
 .icon {
     width: 50px;
     height: auto;
@@ -202,6 +208,7 @@ form input[type="submit"] {
 }
 
 
+
 /* Footer Section */
 footer {
     background-color: var(--primary-color);
@@ -209,9 +216,5 @@ footer {
     height: 100px;
     padding: 10px;
     margin-bottom: 10px;
-}
-
-footer p {
-    text-align: center;
 }
 
